@@ -1,5 +1,5 @@
-﻿  main.cc
-c:\users\kyle bush\documents\visual studio 2015\projects\yahtzee clone\yahtzee clone\main.cc(37): warning C4996: 'sf::Text::setColor': was declared deprecated
-  c:\users\kyle bush\desktop\sfml\sfml-2.4.2\include\sfml\graphics\text.hpp(177): note: see declaration of 'sf::Text::setColor'
-  Yahtzee Clone.vcxproj -> c:\users\kyle bush\documents\visual studio 2015\Projects\Yahtzee Clone\Debug\Yahtzee Clone.exe
-  Yahtzee Clone.vcxproj -> c:\users\kyle bush\documents\visual studio 2015\Projects\Yahtzee Clone\Debug\Yahtzee Clone.pdb (Full PDB)
+﻿  Yahtzee.cc
+c:\users\kyle bush\documents\visual studio 2015\projects\yahtzee clone\yahtzee clone\yahtzee.cc(102): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\kyle bush\documents\visual studio 2015\projects\yahtzee clone\yahtzee clone\yahtzee.cc(103): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Yahtzee Clone.vcxproj -> C:\Users\Kyle Bush\documents\visual studio 2015\Projects\Yahtzee Clone\Debug\Yahtzee Clone.exe
+  Yahtzee Clone.vcxproj -> C:\Users\Kyle Bush\documents\visual studio 2015\Projects\Yahtzee Clone\Debug\Yahtzee Clone.pdb (Full PDB)

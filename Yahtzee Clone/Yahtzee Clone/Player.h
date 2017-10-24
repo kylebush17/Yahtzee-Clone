@@ -35,10 +35,11 @@ public:
 
 	int sum_dice();
 
-private:
+
 	Dice diceArray[5];
 	Scorecard scoreCard;
 	string playerName;
+	int numRolls;
 
 };
 

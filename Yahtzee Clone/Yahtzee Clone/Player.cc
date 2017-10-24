@@ -2,13 +2,14 @@
 Player::Player()
 {
 	playerName = "player unknown";
-	
+	numRolls = 1;
 
 }
 
 Player::Player(string name)
 {
 	playerName = name;
+	numRolls = 1;
 }
 
 Player::~Player()

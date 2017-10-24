@@ -1,5 +1,9 @@
 #pragma once
+#include <SFML/Graphics.hpp>
+#include <iostream>
+#include <string>
 
+using namespace std;
 class Scorecard
 {
 public:
@@ -20,6 +24,7 @@ public:
 	bool smallStraight;
 	bool largeStraight;
 	bool yahtzee;
+	bool chance;
 	bool upperBonus;
 	bool yahtzeeBonus;
 
@@ -35,9 +40,13 @@ public:
 	int fullHouse_value;
 	int smallStraight_value;
 	int largeStraight_value;
+	int chance_value;
 	int yahtzee_value;
-	int upperBonu_values;
+	int upperBonus_values;
 	int yahtzeeBonus_value;
+
+
+	void draw(sf::RenderWindow &window);
 
 	
 };

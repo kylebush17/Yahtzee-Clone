@@ -150,12 +150,14 @@
   <ItemGroup>
     <ClCompile Include="Dice.cc" />
     <ClCompile Include="main.cc" />
+    <ClCompile Include="Menu.cc" />
     <ClCompile Include="Player.cc" />
     <ClCompile Include="Scorecard.cc" />
     <ClCompile Include="Yahtzee.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dice.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Scorecard.h" />
     <ClInclude Include="Yahtzee.h" />

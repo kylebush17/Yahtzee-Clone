@@ -13,8 +13,10 @@ using namespace std;
 int main()
 {
 	srand((unsigned int)time(NULL));	//-- seed for random number generation
-	sf::RenderWindow mainWindow(sf::VideoMode(500, 500), "Yahtzee Clone!");
-	Text text;
+	sf::RenderWindow mainWindow(sf::VideoMode(750, 750), "Yahtzee Clone!");
+	Menu menu(mainWindow.getSize().x, mainWindow.getSize().y);
+	Yahtzee game(mainWindow.getSize().x, mainWindow.getSize().y);
+	/*Text text;
 	Font font;
 
 	Texture texture;
@@ -37,7 +39,7 @@ int main()
 	text.setColor(Color::Cyan);
 	text.setFillColor(Color::Cyan);
 
-	
+	*/
 	
 
 
@@ -46,13 +48,46 @@ int main()
 		sf::Event event;
 		while (mainWindow.pollEvent(event))
 		{
+			switch (event.type)
+			{
+			case sf::Event::MouseButtonPressed:
+				cout << "mouse button pressed" << endl;
+				switch (event.key.code)
+				{
+				case sf::Mouse::Left:
+					if (menu.selectedIndex == -1) {	//handle menu input if at main menu, otherwise we will be handling other mouse input
+						cout << "mouse 1 has been pressed" << endl;
+						Vector2f position = Vector2f(Mouse::getPosition(mainWindow));
+						menu.handleMouseClick(event, position);
+					}
+				
+				}
+				break;
+			}
 			if (event.type == sf::Event::Closed)
 				mainWindow.close();
 		}
 		
 		mainWindow.clear();
-		mainWindow.draw(text);
-		mainWindow.draw(playbutton);
+
+		if (menu.selectedIndex == 0)
+		{
+			game.draw(mainWindow);
+		}
+		else if (menu.selectedIndex == 1)
+		{
+			//draw rules
+		}
+		else if (menu.selectedIndex == 2)
+		{
+			//exit game
+			mainWindow.close();
+		}
+		else
+		{
+			menu.draw(mainWindow);
+		}
+		
 		mainWindow.display();
 	}
 
