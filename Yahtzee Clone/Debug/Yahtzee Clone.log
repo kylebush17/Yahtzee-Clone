@@ -1,0 +1,6 @@
+﻿  main.cc
+c:\important docs\visual studio 2015\projects\yahtzee clone\yahtzee clone\main.cc(20): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+c:\important docs\visual studio 2015\projects\yahtzee clone\yahtzee clone\main.cc(21): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+c:\important docs\visual studio 2015\projects\yahtzee clone\yahtzee clone\main.cc(54): warning C4101: 'event2': unreferenced local variable
+  Yahtzee Clone.vcxproj -> C:\Important Docs\Visual Studio 2015\Projects\Yahtzee Clone\Debug\Yahtzee Clone.exe
+  Yahtzee Clone.vcxproj -> C:\Important Docs\Visual Studio 2015\Projects\Yahtzee Clone\Debug\Yahtzee Clone.pdb (Full PDB)
